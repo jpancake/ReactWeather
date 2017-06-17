@@ -19,11 +19,6 @@ const WeatherMessage = ({ weather }) => {
 			<Map
 				lng={lon}
 				lat={lat}
-				googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzh16sfwwZUJu2fj1XklOQR7U8zMvJl3s&callback=initMap"
-				query={{
-					v: '3',
-					libraries: 'geometry,drawing,places'
-				}}
 				loadingElement={
 					<div className="spinner" />
 				}
