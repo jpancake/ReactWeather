@@ -19,9 +19,8 @@ const WeatherMessage = ({ weather }) => {
 			<Map
 				lng={lon}
 				lat={lat}
-				googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
+				googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0NGuGw308FN3TpLmDv6AOFmn8OWSLVCk"
 				query={{
-					key: 'AIzaSyB0NGuGw308FN3TpLmDv6AOFmn8OWSLVCk',
 					v: '3',
 					libraries: 'geometry,drawing,places'
 				}}
