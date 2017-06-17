@@ -3,7 +3,8 @@ import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs'
 
 
-const Map = withGoogleMap(
+const Map = withScriptjs(
+	withGoogleMap(
 		props => (
 			<GoogleMap
 				ref={props.onMapLoad}
@@ -18,7 +19,7 @@ const Map = withGoogleMap(
 			</GoogleMap>
 		)
 	)
-
+)
 
 export default Map
 
